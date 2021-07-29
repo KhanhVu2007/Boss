@@ -1,0 +1,41 @@
+---
+id: "quybucu"
+name: "&l&cQuý bú cu"
+health: 1000
+damage: 20
+speed: 1.5
+scale: 1.2
+spawnPos: [100, 65, 100, world]
+#Tính theo tick
+attackSpeed: 0
+#Khi bạn set model là quybucu thì skin và geometry (nếu cần) của bạn sẽ phải đặt tên lần lượt là quybucu_skin và quybucu_geometry
+model: quybucu
+bossnametag: "&c{name}\n&c{health}/{maxhealth}"
+#Các số thứ tự sau dành cho những người có số damage cao nhất.
+#Format: [id, meta, count, name, lore, [id => level, id2 => level2], tỉ lệ drop
+#Lưu ý: TẤT CẢ ITEM DROPS TỔNG TỈ LỆ PHẢI BẰNG 100%! VÍ DỤ:
+#items:
+# - 10%
+# - 30%
+# - 60%
+#Sau bao lâu sẽ hồi sinh, tính theo giây
+time: 3600
+#Tầm xa để boss có thể đi và tấn công người chơi
+radius: 10
+drops:
+  1:
+    items:
+      - [1, 0, 64, "mẹ mày", "lore mẹ mày\nmẹ mày", [], 100]
+    commands:
+      - "give {player} 64 1"
+  2:
+    items:
+      - [2, 0, 64, "Bố mày", "lore bố mày\nbố mày", [ ], 100]
+    commands:
+      - "give {player} 64 1"
+  3:
+    items:
+      - [ 2, 0, 64, "Anh mày", "lore anh mày\nanh mày", [ ], 100]
+    commands:
+      - "give {player} 64 1"
+...

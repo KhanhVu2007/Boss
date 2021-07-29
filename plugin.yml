@@ -1,0 +1,6 @@
+---
+name: Boss
+version: 0.0.1
+main: Labality\Boss\Main
+api: 3.21.0
+...

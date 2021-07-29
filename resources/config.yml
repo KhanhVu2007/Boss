@@ -1,0 +1,7 @@
+---
+bestDamagerMessageHeader: "&l&cBoss&8 >&6 Danh sách những người đã gây ra nhiều sát thương cho boss {boss_name}"
+bestDamagerMessageList: "&c{index}.&f {name}&6 với sát thương&f {damage}"
+inventoryFull: "Túi đồ của bạn đã đầy"
+bossSpawn: "{name} đã hồi sinh!"
+dealDamageToBoss: "Bạn đã gây ra {damage} sát thương cho boss {name}"
+...
