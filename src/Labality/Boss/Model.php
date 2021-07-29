@@ -44,8 +44,6 @@ class Model extends Human
             throw new InvalidArgumentException("This entity should not be summoned directly.");
         }
         
-        Server::getInstance()->getLogger()->alert(base64_decode("QuG6oW4gxJHDoyBi4buLIGzhu6thIG7hur91IHBo4bqjaSB0cuG6oyB0aeG7gW4gxJHhu4MgbXVhIHBsdWdpbiBuw6B5ISBMacOqbiBo4buHOiBodHRwczovL3d3dy5mYWNlYm9vay5jb20vbGFiYWxpdHkvIMSR4buDIHThu5EgY8Ohbw=="));
-
         $this->boss = Main::getInstance()->getBoss($this->namedtag->getString("bossId"));
 
         if($this->boss === null){
